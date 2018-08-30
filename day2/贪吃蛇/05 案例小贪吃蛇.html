@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .map {
+            width: 800px;
+            height: 600px;
+            background: #cccccc;
+            position: relative;
+        }
+    </style>
+    <script src="food.js"></script>
+    <script src="snake.js"></script>
+    <script src="game.js"></script>
+</head>
+<body>
+<!--画出地图-->
+<div class="map"></div>
+
+<script>
+
+
+
+
+
+
+    //初始化游戏对象
+    var gm = new Game(document.querySelector(".map"));
+
+    //初始化游戏---开始游戏
+    gm.init();
+
+    //外部测试代码
+    //    var fd = new Food();
+    //    fd.init(document.querySelector(".map"));
+    //    var snake = new Snake();
+    //    snake.init(document.querySelector(".map"));//先在地图上看到蛇
+    //    setInterval(function () {
+    //        snake.move(fd, document.querySelector(".map"));//走一步
+    //        snake.init(document.querySelector(".map"));//初始化---重新画一条小蛇(先删除之前的小蛇,把现在的小蛇显示出来)
+    //    }, 150);
+
+    //    snake.move(fd,document.querySelector(".map"));//走一步
+    //    snake.init(document.querySelector(".map"));//初始化---重新画一条小蛇(先删除之前的小蛇,把现在的小蛇显示出来)
+    //console.log(fd.width);
+    // console.log(fd.x + "===>" + fd.y);
+</script>
+</body>
+</html>

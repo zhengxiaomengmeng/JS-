@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        //递归：函数中调用自己，此时就是递归，递归一定要有结束条件
+        var i = 0 ;
+        function f1() {
+            i++;
+            console.log(i)
+            if(i<5){
+                f1();
+            }
+            console.log("从前有个山,山里有个庙,庙里有个和尚给小和尚讲故事:");
+        };
+        f1();
+    </script>
+</head>
+<body>
+
+</body>
+</html>

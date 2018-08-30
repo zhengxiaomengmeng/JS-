@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        function f1(){
+            var num = 10;
+            num++;
+            console.log(num);
+        }
+        f1();//11
+        f1();//11
+        f1();//11
+        
+        function f1() {
+            var num =10;
+            return function () {
+                num++;
+                return num ;
+            }
+        }
+        var ff = f1();
+        console.log(ff());//11
+        console.log(ff());//12
+        console.log(ff());//13
+    </script>
+</head>
+<body>
+
+</body>
+</html>
